@@ -404,6 +404,7 @@
                 name="email"
                 placeholder="E-mail"
                 class="input"
+                required
               />
             </label>
             <button type="submit" class="submit-button" name="submit-button">
@@ -417,10 +418,12 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="data-modal">
-        <svg width="16" height="12" data-modal-close class="close">
-          <use href="./images/icons.svg#icon-cross"></use>
-        </svg>
-        <h2 class="title-section">Залиште свої дані, ми вам передзвонимо</h2>
+        <button type="button" data-modal-close class="close">
+          <svg width="30" height="30" class="close-icon">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="title-section">Залиште свої дані, ми вам передзвонимо</p>
         <form action="" class="order-form">
           <label class="input">
             Ім'я
@@ -428,7 +431,13 @@
             <svg class="person-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            <input type="text" name="username" autofocus class="input-style" />
+            <input
+              type="text"
+              name="username"
+              autofocus
+              class="input-style"
+              required
+            />
           </label>
           <label class="input">
             Телефон
@@ -436,7 +445,7 @@
             <svg class="phone2-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-            <input type="phone" name="phone" class="input-style" />
+            <input type="phone" name="phone" class="input-style" required />
           </label>
           <label class="input">
             Пошта
@@ -449,6 +458,7 @@
               name="email"
               placeholder=""
               class="input-style"
+              required
             />
           </label>
           <label class="input">
@@ -467,6 +477,7 @@
               name="checkbox"
               value="agreement"
               class="form-input"
+              required
             />
             <label class="form-label details1"
               >Погоджуюся з розсилкою та приймаю </label
