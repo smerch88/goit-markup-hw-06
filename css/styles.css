@@ -207,6 +207,7 @@ img {
 
 .page-footer a:link {
     color: var(--whiteColor);
+
 }
 
 .page-header .logo a:link,
@@ -235,6 +236,7 @@ img {
 footer .contacts a:link {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
+    line-height: 1.71;
 }
 
 .contacts a:visited {
@@ -1003,12 +1005,13 @@ header .current-page a:visited {
     display: flex;
     align-items: center;
     gap: 7px;
+    margin-top: 10px;
     justify-content: center;
 }
 
 .order-form .submit-button {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
     letter-spacing: 0.06em;
     line-height: 1.9;
